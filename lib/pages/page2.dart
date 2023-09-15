@@ -21,10 +21,12 @@ class TabScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     FloatingActionButton(
+                      heroTag: #fab1,
                       onPressed: () => tabController.animateTo(0),
                       child: const Icon(Icons.arrow_back_ios_rounded),
                     ),
                     FloatingActionButton(
+                      heroTag: #fab2,
                       onPressed: () => tabController.animateTo(1),
                       child: const Icon(Icons.arrow_forward_ios_rounded),
                     ),

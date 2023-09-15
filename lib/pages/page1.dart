@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: FloatingActionButton(
+          heroTag: #fab,
           onPressed: () => context.router.navigate(const TabRoute()),
           child: const Icon(Icons.arrow_forward_ios_rounded),
         ),
