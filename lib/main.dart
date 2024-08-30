@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:test/router.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 final router = AppRouter();
 
 void main() {
+  setPathUrlStrategy();
+
   runApp(const MyApp());
 }
 

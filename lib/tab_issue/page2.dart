@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:test/router.dart';
 
 @RoutePage()
-class TabScreen extends StatelessWidget {
-  const TabScreen({super.key});
+class TabIssueTabScreen extends StatelessWidget {
+  const TabIssueTabScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: AutoTabsRouter.tabBar(
         routes: const [
-          Tab1Route(),
-          Tab2Route(),
+          TabIssueTab1Route(),
+          TabIssueTab2Route(),
         ],
         builder: (context, child, tabController) {
           return Column(
@@ -45,8 +45,8 @@ class TabScreen extends StatelessWidget {
 }
 
 @RoutePage()
-class Tab1Screen extends StatelessWidget {
-  const Tab1Screen({super.key});
+class TabIssueTab1Screen extends StatelessWidget {
+  const TabIssueTab1Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,8 +59,8 @@ class Tab1Screen extends StatelessWidget {
 }
 
 @RoutePage()
-class Tab2Screen extends StatelessWidget {
-  const Tab2Screen({super.key});
+class TabIssueTab2Screen extends StatelessWidget {
+  const TabIssueTab2Screen({super.key});
 
   @override
   Widget build(BuildContext context) {

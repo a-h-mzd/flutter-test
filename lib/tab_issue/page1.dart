@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test/router.dart';
 
 @RoutePage()
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class TabIssueHomeScreen extends StatelessWidget {
+  const TabIssueHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: FloatingActionButton(
           heroTag: #fab,
-          onPressed: () => context.router.navigate(const TabRoute()),
+          onPressed: () => context.router.navigate(const TabIssueTabRoute()),
           child: const Icon(Icons.arrow_forward_ios_rounded),
         ),
       ),
